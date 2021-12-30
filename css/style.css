@@ -1,0 +1,132 @@
+@import "reset.css";
+
+.hidden {
+  display: none;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+img {
+  position: absolute;
+  width: 100%;
+  z-index: -5;
+  top: 0px;
+  height: 100%;
+  filter: brightness(40%);
+}
+input[type="text"] {
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  width: 400px;
+  border-bottom: 1px solid white;
+  height: 35px;
+  font-size: 20px;
+  outline: none;
+  text-align: center;
+  color: white;
+  border-radius: 15px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  transition: all 0.5s ease-in-out;
+}
+input[type="text"]:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+input[type="text"]:focus {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+input[type="submit"] {
+  display: none;
+}
+
+input::placeholder {
+  color: white;
+  text-align: center;
+  transition: all 0.5s ease-in-out;
+}
+input:focus::placeholder {
+  color: transparent;
+}
+
+#login-form {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#clock {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 120px;
+  color: white;
+}
+#todo-form {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#todo-form input {
+  margin-bottom: 10px;
+}
+
+#quote {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 1200px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#quote span:first-child {
+  font-size: 14px;
+  margin-bottom: 10px;
+  opacity: 0.6;
+}
+#quote span:last-child {
+  font-size: 7px;
+  opacity: 0.6;
+}
+#greeting {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: white;
+  transform: translate(-50%, -50%);
+  font-size: 60px;
+}
+#todo-listcase {
+  display: flex;
+  width: 500px;
+  height: 150px;
+  position: absolute;
+  top: 76%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  justify-content: center;
+  text-align: center;
+  overflow: scroll;
+}
+#todo-listcase li {
+  margin-top: 6px;
+}
+#todo-listcase span {
+  color: white;
+}
+#todo-listcase button {
+  background-color: transparent;
+  border: none;
+}
