@@ -118,8 +118,12 @@ input:focus::placeholder {
   transform: translate(-50%, -50%);
   justify-content: center;
   text-align: center;
-  overflow: scroll;
+  overflow-y: scroll;
 }
+#todo-listcase::-webkit-scrollbar {
+  display: none;
+}
+
 #todo-listcase li {
   margin-top: 6px;
 }
